@@ -4,18 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60ccdc10-d099-42ca-a41e-c721e320af45" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/chromedriver" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ElementsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/TextBoxPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/TextBoxTests.java" afterDir="false" />
+    <list default="true" id="60ccdc10-d099-42ca-a41e-c721e320af45" name="Changes" comment="Webinar_06_03_24">
+      <change afterPath="$PROJECT_DIR$/src/test/java/dto/TextBoxUserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/utils/ScreenShotManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/config/ConfigManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/config/ConfigManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/SettingsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/SettingsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/TextBoxPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/TextBoxPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TextBoxTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TextBoxTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,9 +50,13 @@
     "TestNG.SettingsTests.test_002.executor": "Run",
     "TestNG.SettingsTests.test_003.executor": "Run",
     "TestNG.SettingsTests.test_004.executor": "Run",
+    "TestNG.TextBoxTests.testForm.executor": "Run",
     "TestNG.TextBoxTests.textBoxPageOpened.executor": "Run",
     "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -63,24 +64,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TextBoxTests.textBoxPageOpened">
-    <configuration name="SettingsTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="demoqa41" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.SettingsTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.TextBoxTests.testForm">
     <configuration name="SettingsTests.test_001" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="demoqa41" />
       <extension name="coverage">
@@ -135,6 +119,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TextBoxTests.testForm" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="demoqa41" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.TextBoxTests" />
+      <option name="METHOD_NAME" value="testForm" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TextBoxTests.textBoxPageOpened" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="demoqa41" />
       <extension name="coverage">
@@ -155,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TextBoxTests.testForm" />
         <item itemvalue="TestNG.TextBoxTests.textBoxPageOpened" />
         <item itemvalue="TestNG.SettingsTests.test_004" />
         <item itemvalue="TestNG.SettingsTests.test_002" />
         <item itemvalue="TestNG.SettingsTests.test_001" />
-        <item itemvalue="TestNG.SettingsTests" />
       </list>
     </recent_temporary>
   </component>
@@ -179,6 +181,19 @@
       <option name="presentableId" value="Default" />
       <updated>1709340940941</updated>
     </task>
+    <task id="LOCAL-00001" summary="Webinar_06_03_24">
+      <option name="closed" value="true" />
+      <created>1709748688741</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709748688741</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Webinar_06_03_24" />
+    <option name="LAST_COMMIT_MESSAGE" value="Webinar_06_03_24" />
   </component>
 </project>
