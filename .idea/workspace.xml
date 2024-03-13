@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60ccdc10-d099-42ca-a41e-c721e320af45" name="Changes" comment="Webinar_06_03_24">
-      <change afterPath="$PROJECT_DIR$/src/test/java/dto/TextBoxUserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/ScreenShotManager.java" afterDir="false" />
+    <list default="true" id="60ccdc10-d099-42ca-a41e-c721e320af45" name="Changes" comment="Webinar_7">
+      <change afterPath="$PROJECT_DIR$/src/test/java/experiments/LambdaExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/experiments/StreamExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/config/ConfigManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/config/ConfigManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/TextBoxPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/TextBoxPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/TextBoxTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TextBoxTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/ScreenShotManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/ScreenShotManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +39,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.LambdaExample.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -50,6 +48,7 @@
     "TestNG.SettingsTests.test_002.executor": "Run",
     "TestNG.SettingsTests.test_003.executor": "Run",
     "TestNG.SettingsTests.test_004.executor": "Run",
+    "TestNG.TextBoxTests.executor": "Run",
     "TestNG.TextBoxTests.testForm.executor": "Run",
     "TestNG.TextBoxTests.textBoxPageOpened.executor": "Run",
     "git-widget-placeholder": "main",
@@ -64,39 +63,16 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TextBoxTests.testForm">
-    <configuration name="SettingsTests.test_001" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.LambdaExample">
+    <configuration name="LambdaExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="experiments.LambdaExample" />
       <module name="demoqa41" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.*" />
+          <option name="PATTERN" value="experiments.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.SettingsTests" />
-      <option name="METHOD_NAME" value="test_001" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SettingsTests.test_002" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="demoqa41" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.SettingsTests" />
-      <option name="METHOD_NAME" value="test_002" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -113,6 +89,23 @@
       <option name="MAIN_CLASS_NAME" value="tests.SettingsTests" />
       <option name="METHOD_NAME" value="test_004" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TextBoxTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="demoqa41" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.TextBoxTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -157,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LambdaExample" />
+        <item itemvalue="TestNG.TextBoxTests" />
         <item itemvalue="TestNG.TextBoxTests.testForm" />
         <item itemvalue="TestNG.TextBoxTests.textBoxPageOpened" />
         <item itemvalue="TestNG.SettingsTests.test_004" />
-        <item itemvalue="TestNG.SettingsTests.test_002" />
-        <item itemvalue="TestNG.SettingsTests.test_001" />
       </list>
     </recent_temporary>
   </component>
@@ -189,11 +182,20 @@
       <option name="project" value="LOCAL" />
       <updated>1709748688741</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Webinar_7">
+      <option name="closed" value="true" />
+      <created>1710094373891</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1710094373891</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Webinar_06_03_24" />
-    <option name="LAST_COMMIT_MESSAGE" value="Webinar_06_03_24" />
+    <MESSAGE value="Webinar_7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Webinar_7" />
   </component>
 </project>

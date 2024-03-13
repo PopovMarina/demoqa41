@@ -12,7 +12,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 public class ScreenShotManager {
-    public class TakeScreen {
+
         @Attachment(value = "Falure screenshot", type = "image/png")
         public static byte[] takeScreenshot(String testName) {
             //return ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.BYTES);
@@ -23,13 +23,15 @@ public class ScreenShotManager {
                 String screenshotName = testName + "_" + System.currentTimeMillis() + ".png";
                 File screenshotFile = ((TakesScreenshot) ConfigManager.getDriver()).getScreenshotAs(OutputType.FILE);
                 FileUtils.copyFile(screenshotFile, new File("screenshots/" + screenshotName));
-                return Files.readAllBytes(Paths.get("screenshots\\" + screenshotName));
+                // for mac both return are correct
+                return Files.readAllBytes(Paths.get("screenshots/" + screenshotName));
+                //  return Files.readAllBytes(Paths.get("screenshots/"+screenshotName));
             } catch (IOException e) {
                 return null;
             }
         }
     }
-}
+
 
 
 
