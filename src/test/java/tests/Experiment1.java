@@ -7,6 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import java.time.Duration;
 import java.util.Set;
@@ -62,5 +63,32 @@ public class Experiment1 {
         driver.quit();
 
     }
+
+    @Test
+    public void testRectangle() {
+        // TODO
+    }
+
+    // TODO SoftAsserts
+
+    @Test
+    public void softAssertsTest() {
+        WebDriver driver = new FirefoxDriver();
+        driver.get("https://demoqa.com/text-box");
+        driver.manage().window().maximize();
+
+        SoftAssert softAssert = new SoftAssert();
+        String text = driver.findElement(By.xpath("//label[@id='currentAddress-label']")).getText();
+        // Current Address
+        softAssert.assertTrue(text.contains("Current"), "current");
+        //  softAssert.assertTrue(text.contains("name"), "name");
+        softAssert.assertTrue(text.contains("Address"));
+        System.out.println("all tests checked");
+        driver.quit();
+        softAssert.assertAll();
+
+    }
+
+
 
 }
