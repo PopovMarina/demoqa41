@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60ccdc10-d099-42ca-a41e-c721e320af45" name="Changes" comment="Webinar_8" />
+    <list default="true" id="60ccdc10-d099-42ca-a41e-c721e320af45" name="Changes" comment="Webinar_8_1">
+      <change afterPath="$PROJECT_DIR$/src/test/java/experiments/RegEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/Experiment1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/experiments/LambdaExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/experiments/LambdaExample.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,9 +39,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.LambdaExample.executor": "Run",
+    "Application.RegEx.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.Experiment1.switchTabByIndex.executor": "Run",
     "TestNG.SettingsTests.executor": "Run",
     "TestNG.SettingsTests.test_001.executor": "Run",
     "TestNG.SettingsTests.test_002.executor": "Run",
@@ -57,7 +64,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LambdaExample">
+  <component name="RunManager" selected="TestNG.Experiment1.switchTabByIndex">
     <configuration name="LambdaExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="experiments.LambdaExample" />
       <module name="demoqa41" />
@@ -71,7 +78,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SettingsTests.test_004" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="RegEx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="experiments.RegEx" />
+      <module name="demoqa41" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="experiments.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Experiment1.switchTabByIndex" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="demoqa41" />
       <extension name="coverage">
         <pattern>
@@ -80,8 +100,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.SettingsTests" />
-      <option name="METHOD_NAME" value="test_004" />
+      <option name="MAIN_CLASS_NAME" value="tests.Experiment1" />
+      <option name="METHOD_NAME" value="switchTabByIndex" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -124,31 +144,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TextBoxTests.textBoxPageOpened" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="demoqa41" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.TextBoxTests" />
-      <option name="METHOD_NAME" value="textBoxPageOpened" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Experiment1.switchTabByIndex" />
+        <item itemvalue="Application.RegEx" />
         <item itemvalue="Application.LambdaExample" />
         <item itemvalue="TestNG.TextBoxTests" />
         <item itemvalue="TestNG.TextBoxTests.testForm" />
-        <item itemvalue="TestNG.TextBoxTests.textBoxPageOpened" />
-        <item itemvalue="TestNG.SettingsTests.test_004" />
       </list>
     </recent_temporary>
   </component>
@@ -192,13 +194,22 @@
       <option name="project" value="LOCAL" />
       <updated>1710353394037</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Webinar_8_1">
+      <option name="closed" value="true" />
+      <created>1710357892773</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710357892773</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Webinar_06_03_24" />
     <MESSAGE value="Webinar_7" />
     <MESSAGE value="Webinar_8" />
-    <option name="LAST_COMMIT_MESSAGE" value="Webinar_8" />
+    <MESSAGE value="Webinar_8_1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Webinar_8_1" />
   </component>
 </project>
